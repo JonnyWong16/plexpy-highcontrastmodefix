@@ -9,16 +9,12 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 
-waitForKeyElements("#home-stats .poster-face", imageReplacement);
-waitForKeyElements("#home-stats .home-platforms-instance-oval", imageReplacement);
-waitForKeyElements("#home-stats .home-platforms-instance-box", imageReplacement);
-
-waitForKeyElements("#recentlyAdded .poster-face", imageReplacement);
-
-waitForKeyElements("#user-platform-stats .user-platforms-instance-box", imageReplacement);
-waitForKeyElements("#user-recently-watched .poster-face", imageReplacement);
-
 waitForKeyElements(".poster-face", imageReplacement);
+waitForKeyElements(".home-platforms-instance-oval", imageReplacement);
+waitForKeyElements(".home-platforms-instance-box", imageReplacement);
+waitForKeyElements(".users-poster-face", imageReplacement);
+waitForKeyElements(".user-info-poster-face", imageReplacement);
+waitForKeyElements(".user-platforms-instance-box", imageReplacement);
 
 function imageReplacement (elementToReplace) {
     var img_url, width, height;
@@ -32,6 +28,10 @@ function imageReplacement (elementToReplace) {
         elementToReplace.attr("class").indexOf("user-platforms-instance-box") > -1 ) {
        width = 80;
        height = 80;
+    } else if (elementToReplace.attr("class").indexOf("users-poster-face") > -1) {
+        width = 40;
+        height = 40;
     }
+    
     elementToReplace.html('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
 }
