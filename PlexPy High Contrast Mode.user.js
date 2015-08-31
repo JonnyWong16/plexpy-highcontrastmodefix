@@ -4,7 +4,8 @@
 // @version      1.1
 // @description  Replaces all background images on PlexPy to display images in high contrast mode
 // @author       JonnyWong16
-// @include      *localhost:8181/*
+// @include      *localhost:8181*
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @grant        GM_addStyle
 // ==/UserScript==
