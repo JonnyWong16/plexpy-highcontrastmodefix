@@ -50,7 +50,7 @@ function imageReplacement150x225 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 150;
     height = 225;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement150x150 (elementToReplace) {
@@ -58,7 +58,7 @@ function imageReplacement150x150 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 150;
     height = 150;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement250x375 (elementToReplace) {
@@ -66,7 +66,7 @@ function imageReplacement250x375 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 250;
     height = 375;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement250x140 (elementToReplace) {
@@ -74,7 +74,7 @@ function imageReplacement250x140 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 250;
     height = 140;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement180x180 (elementToReplace) {
@@ -82,7 +82,7 @@ function imageReplacement180x180 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 180;
     height = 180;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement200x200 (elementToReplace) {
@@ -90,7 +90,7 @@ function imageReplacement200x200 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 200;
     height = 200;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement250x250 (elementToReplace) {
@@ -98,7 +98,7 @@ function imageReplacement250x250 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 250;
     height = 250;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement103x58 (elementToReplace) {
@@ -106,7 +106,7 @@ function imageReplacement103x58 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 103;
     height = 58;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement34x34 (elementToReplace) {
@@ -114,7 +114,7 @@ function imageReplacement34x34 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 34;
     height = 34;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
 
 function imageReplacement60x60 (elementToReplace) {
@@ -122,5 +122,5 @@ function imageReplacement60x60 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 60;
     height = 60;
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
