@@ -40,6 +40,10 @@ waitForKeyElements(".details-poster-container .album-poster", imageReplacement25
 
 waitForKeyElements(".playlist-item .media-poster", imageReplacement103x58);
 
+waitForKeyElements(".dropdown-poster-toggle .media-poster", imageReplacement34x34);
+waitForKeyElements(".server-account-container>.server-account-poster", imageReplacement60x60);
+waitForKeyElements(".card-user .card-poster", imageReplacement80x80);
+
 
 function imageReplacement150x225 (elementToReplace) {
     var img_url, width, height;
@@ -102,5 +106,21 @@ function imageReplacement103x58 (elementToReplace) {
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
     width = 103;
     height = 58;
+    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+}
+
+function imageReplacement34x34 (elementToReplace) {
+    var img_url, width, height;
+    img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
+    width = 34;
+    height = 34;
+    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+}
+
+function imageReplacement60x60 (elementToReplace) {
+    var img_url, width, height;
+    img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
+    width = 60;
+    height = 60;
     elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
 }
