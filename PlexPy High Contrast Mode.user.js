@@ -67,5 +67,5 @@ function imageReplacement (elementToReplace) {
         width = 150;
         height = 225;
     }
-    elementToReplace.append('<img src="' + img_url + '" width="' + width + '" height="' + height + '"/>');
+    elementToReplace.append('<img src=' + img_url + ' width="' + width + '" height="' + height + '"/>');
 }
