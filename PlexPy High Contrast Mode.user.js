@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PlexPy High Contrast Mode
 // @namespace    https://github.com/JonnyWong16/plexpy-highcontrastmodefix
-// @version      1.2
+// @version      1.2.1
 // @description  Replaces all background images on PlexPy to display images in high contrast mode
 // @author       JonnyWong16
 // @include      *localhost:8181*
@@ -42,6 +42,12 @@ function imageReplacement (elementToReplace) {
     var img_url, width, height;
 
     img_url = elementToReplace.attr('style').split('(')[1].split(')')[0];
+    if (img_url.charAt(0) === '"' || img_url.charAt(0) === "'") {
+        img_url = img_url.substr(1, img_url.length-1);
+    }
+    if (img_url.charAt(img_url.length-1) === '"' || img_url.charAt(img_url.length-1) === "'") {
+        img_url = img_url.substr(0, img_url.length-1);
+    }
 
     if (elementToReplace.attr("class").indexOf("users-poster-face") > -1 ||
         elementToReplace.attr("class").indexOf("libraries-poster-face") > -1 ||
